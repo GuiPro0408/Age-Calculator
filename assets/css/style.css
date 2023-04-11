@@ -85,6 +85,8 @@ body {
   margin: 0;
 }
 .container .input_container .input_content .data_container input[type=number] {
+  appearance: textfield;
+  -webkit-appearance: textfield;
   -moz-appearance: textfield;
 }
 .container .input_container .input_content .data_container .input_data {
@@ -101,6 +103,18 @@ body {
   font-size: 10px;
   letter-spacing: 0.3px;
   font-style: italic;
+}
+@media screen and (max-width: 650px) {
+  .container .input_container .input_content .data_container label {
+    letter-spacing: 4px;
+  }
+  .container .input_container .input_content .data_container .input_data {
+    border-radius: 5px;
+    padding: 10px 18px;
+    color: #323232;
+    font-weight: 800;
+    font-size: 20px;
+  }
 }
 .container .input_container .input_content .submit_button {
   position: absolute;
@@ -133,4 +147,39 @@ body {
 .container .output_container div .output_data {
   letter-spacing: 10px;
   color: #874CFF;
+}
+
+@media screen and (max-width: 650px) {
+  .container {
+    width: 90%;
+    padding: 45px 20px;
+    border-bottom-right-radius: 100px;
+  }
+  .container .input_container .input_content {
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  .container .input_container .input_content .data_container {
+    width: 30%;
+  }
+  .container .input_container .input_content .submit_button {
+    bottom: -33px;
+    right: 50%;
+    transform: translatex(50%);
+    padding: 12px;
+  }
+  .container .input_container .input_content .submit_button:hover {
+    transform: scale(1.1) translatex(45%);
+  }
+  .container .output_container {
+    line-height: 60px;
+    padding-top: 65px;
+  }
+  .container .output_container div {
+    font-size: 55px;
+    letter-spacing: -2px;
+  }
+  .container .output_container div .output_data {
+    letter-spacing: 0px;
+  }
 }/*# sourceMappingURL=style.css.map */
