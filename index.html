@@ -17,6 +17,48 @@
 </head>
 <body>
 
+  <div class="container">
+    <div class="input_container">
+      <form action="#" class="input_content">
+        <div class="data_container">
+          <label for="days">Day</label>
+          <input type="number" name="date" id="days" class = "input_data" placeholder="DD">
+          <span class="error-message" id="days-error"></span>
+        </div>
+
+        <div class="data_container">
+          <label for="months">Month</label>
+          <input type="number" name="months" id="months" class = "input_data" placeholder="MM">
+          <span class="error-message" id="months-error"></span>
+        </div>
+
+        <div class="data_container">
+          <label for="years">Year</label>
+          <input type="number" name="years" id="years" class = "input_data" placeholder="YYYY">
+          <span class="error-message" id="years-error"></span>
+        </div>
+
+        <div class="submit_container">
+          <button type="submit" class="submit_button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="34" viewBox="0 0 46 44">
+              <g fill="none" stroke="#FFF" stroke-width="2">
+                <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div class="output_container">
+      <div class="years_output"><span class="output_data">--</span>years</div>
+      <div class="months_output"><span class="output_data">--</span>months</div>
+      <div class="days_output"><span class="output_data">--</span>days</div>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Guillaume Juste</a>.
