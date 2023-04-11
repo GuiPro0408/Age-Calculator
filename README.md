@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](assets/images/Completed.png)
+![Final Output](assets/images/Completed.png)
 
 ### Links
 
